@@ -1,10 +1,10 @@
 # Working Title:
 ## Name of Lead Designer(s): 
-
+Alexander Yang
 * Theme/Look:
 
 ## Materials & Methods
-_What programing language will you be using? If you are not planing to use Processing explain why you chose a different programing language._
+I will be working with Retro Pie. I will install this over the current operating system, raspian. In addition I will require an internet connection to install the software initially an a flash drive to easily transport ROMS into the game folder.
 
 ## Program Specifications
 _Fully describe your project below in one paragraph (minimum 5 sentences). Is it a game? A tool? If it is a game, what game genre is it?_
