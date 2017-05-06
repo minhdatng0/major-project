@@ -23,7 +23,7 @@ PImage weatherIcon;
 
 void update_data()
 {
-  json = loadJSONObject(" ");
+  json = loadJSONObject("https://openweathermap.org/city/5946768&units=metric");
   print(json);
   
   JSONObject coord = json.getJSONObject("coord");
