@@ -1,6 +1,8 @@
 void setup() {
   size(400,500);
   update_data();
+  
+  frameRate(1);
 }
 
 void draw()
@@ -17,5 +19,8 @@ void draw()
   text("Condition: " + condition + " , " + description, 50, 250);
   image(weatherIcon, 50, 275);
   
-  
+  if((minute()%15 == 0) && (second() == 1))
+  {
+    update_data();
+  }
 }
