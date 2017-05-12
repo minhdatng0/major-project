@@ -21,8 +21,7 @@ String description;
 String icon;
 PImage weatherIcon;
 
-void update_data()
-{
+void update_data() {{
   json = loadJSONObject("https://openweathermap.org/city/5946768&units=metric");
   print(json);
   
@@ -49,4 +48,4 @@ void update_data()
  icon = mainCond.getString("icon");
  
  weatherIcon = loadImage(" " + icon + ".png");
-}
+}}
