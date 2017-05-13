@@ -27,7 +27,7 @@ String icon;
 PImage weatherIcon;
 
 void update_data() {
-  json = loadJSONObject("https://openweathermap.org/data/2.5/weather?q=Edmonton,CA&units=metric");
+  json = loadJSONObject("http://api.openweathermap.org/data/2.5/forecast?id=");
   print(json);
   
   JSONObject coord = json.getJSONObject("coord");
