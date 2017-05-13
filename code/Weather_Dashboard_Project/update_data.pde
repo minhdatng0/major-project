@@ -3,8 +3,13 @@ JSONObject json;
 float lon;
 float lat;
 
+//system varaibles
+int sunR;
+int sunS;
+
 //main weather varaiables
 float temp;
+float pressure;
 int humidity;
 
 //wind variables
@@ -21,16 +26,21 @@ String description;
 String icon;
 PImage weatherIcon;
 
-void update_data() {{
-  json = loadJSONObject("https://openweathermap.org/city/5946768&units=metric");
+void update_data() {
+  json = loadJSONObject("https://openweathermap.org/data/2.5/weather?q=Edmonton,CA&units=metric");
   print(json);
   
   JSONObject coord = json.getJSONObject("coord");
   lon = coord.getFloat("lon");
   lat = coord.getFloat("lat");
   
+  JSONObject sys = json.getJSONObject("sys");
+  sunR = sys.getInt("sunrise");
+  sunS = sys.getInt("sunset");
+  
  JSONObject main = json.getJSONObject("main");
  temp = main.getFloat("temp");
+ pressure = main.getFloat("pressure");
  humidity = main.getInt("humidity");
  
  JSONObject wind = json.getJSONObject("wind");
@@ -47,5 +57,5 @@ void update_data() {{
  description = mainCond.getString("description");
  icon = mainCond.getString("icon");
  
- weatherIcon = loadImage(" " + icon + ".png");
-}}
+ weatherIcon = loadImage("http://openweather.org/img/w/" + icon + ".png");
+}
