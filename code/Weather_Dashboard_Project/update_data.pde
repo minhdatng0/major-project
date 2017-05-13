@@ -27,8 +27,7 @@ String icon;
 PImage weatherIcon;
 
 void update_data() {
-  json = loadJSONObject("http://api.openweathermap.org/data/2.5/forecast?id=");
-  print(json);
+  json = loadJSONObject("http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=6120282445534fc06801321be0bfcc0a&units=metric");
   
   JSONObject coord = json.getJSONObject("coord");
   lon = coord.getFloat("lon");
@@ -58,4 +57,5 @@ void update_data() {
  icon = mainCond.getString("icon");
  
  weatherIcon = loadImage("http://openweather.org/img/w/" + icon + ".png");
+
 }
