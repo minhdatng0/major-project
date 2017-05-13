@@ -1,6 +1,6 @@
 void setup() {
   size(400,500);
-  update_data();
+  update_data();//Brings data from update_data to Weather_Dashboard_Project
   
   frameRate(1);
 }
