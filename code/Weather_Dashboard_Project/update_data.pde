@@ -31,14 +31,9 @@ void update_data() {
   //weather link to bring json data to processing doc
   json = loadJSONObject("http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=6120282445534fc06801321be0bfcc0a&units=metric");
   
-  JSONObject coord = json.getJSONObject("coord");//Error
-  println(json);
-  lon = coord.getFloat("lon");
-  lat = coord.getFloat("lat");
+  lon = json.getJSONObject("city").getJSONObject("coord").getFloat("lon");
+  lat = json.getJSONObject("city").getJSONObject("coord").getFloat("lat");
   
-  JSONObject sys = json.getJSONObject("sys");
-  sunR = sys.getInt("sunrise");
-  sunS = sys.getInt("sunset");
   
  JSONObject main = json.getJSONObject("main");
  temp = main.getFloat("temp");
