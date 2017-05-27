@@ -14,7 +14,7 @@ float pressure;
 int humidity;
 
 //wind variables
-float windS;
+float speed;
 float windD;
 
 //cloud varaible
@@ -33,27 +33,20 @@ void update_data() {
   
   lon = json.getJSONObject("city").getJSONObject("coord").getFloat("lon");
   lat = json.getJSONObject("city").getJSONObject("coord").getFloat("lat");
+  JSONArray list = json.getJSONArray("list");
+  println("list");
+  temp = list.getJSONArray(0).getJSONObject("main").getFloat("temp");
+  //temp = json.getJSONArray("list").getJSONObject("main").getFloat("temp");
+  pressure = json.getJSONObject("list").getJSONObject("main").getFloat("pressure");
+  humidity = json.getJSONObject("list").getJSONObject("main").getInt("humidity");
+  
+  speed = json.getJSONObject("list").getJSONObject("wind").getFloat("speed");
   
   
- JSONObject main = json.getJSONObject("main");
- temp = main.getFloat("temp");
- pressure = main.getFloat("pressure");
- humidity = main.getInt("humidity");
+  cloud = json.getJSONObject("list").getInt("clouds");
+  
+  //description = json.getJSONObject("list").getJSONArray("weather").getString("description");
  
- JSONObject wind = json.getJSONObject("wind");
- windS = wind. getFloat("speed");
- windD = wind.getFloat("deg");
- 
- JSONObject clouds = json.getJSONObject("clouds");
- cloud = clouds.getInt("all");
- 
- JSONArray weather = json.getJSONArray("weather");
- JSONObject mainCond = weather.getJSONObject(0);
- ID = mainCond.getInt("id");
- condition = mainCond.getString("main");
- description = mainCond.getString("description");
- icon = mainCond.getString("icon");
- 
- weatherIcon = loadImage("http://openweather.org/img/w/" + icon + ".png");
+  weatherIcon = loadImage("http://openweather.org/img/w/" + icon + ".png");
 
 }
