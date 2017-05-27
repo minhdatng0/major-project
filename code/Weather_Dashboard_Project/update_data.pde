@@ -33,8 +33,8 @@ void update_data() {
   
   JSONObject coord = json.getJSONObject("coord");//Error
   println(json);
-  float lon = coord.getFloat("lon");
-  float lat = coord.getFloat("lat");
+  lon = coord.getFloat("lon");
+  lat = coord.getFloat("lat");
   
   JSONObject sys = json.getJSONObject("sys");
   sunR = sys.getInt("sunrise");
