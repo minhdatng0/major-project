@@ -33,19 +33,17 @@ void update_data() {
   
   lon = json.getJSONObject("city").getJSONObject("coord").getFloat("lon");
   lat = json.getJSONObject("city").getJSONObject("coord").getFloat("lat");
-  JSONArray list = json.getJSONArray("list");
-  println("list");
-  temp = list.getJSONArray(0).getJSONObject("main").getFloat("temp");
+  //JSONArray list = json.getJSONArray("list");
+  //println(list[0]);
   //temp = json.getJSONArray("list").getJSONObject("main").getFloat("temp");
-  pressure = json.getJSONObject("list").getJSONObject("main").getFloat("pressure");
-  humidity = json.getJSONObject("list").getJSONObject("main").getInt("humidity");
+  //pressure = json.getJSONArray("list").getJSONObject("main").getFloat("pressure");
+  //humidity = json.getJSONArray("list").getJSONObject("main").getInt("humidity");
   
-  speed = json.getJSONObject("list").getJSONObject("wind").getFloat("speed");
+  //speed = json.getJSONArray("list").getJSONObject("wind").getFloat("speed");
   
+  //cloud = json.getJSONArray("list").getInt("clouds");
   
-  cloud = json.getJSONObject("list").getInt("clouds");
-  
-  //description = json.getJSONObject("list").getJSONArray("weather").getString("description");
+  //description = json.getJSONArray("list").getJSONArray("weather").getString("description");
  
   weatherIcon = loadImage("http://openweather.org/img/w/" + icon + ".png");
 
