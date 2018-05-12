@@ -1,8 +1,6 @@
 # Working Title:
 ## Name of Lead Designer(s): 
 
-* Theme/Look:
-
 ## Materials & Methods
 _What programing language will you be using? If you are not planing to use Processing explain why you chose a different programing language._
 
@@ -17,8 +15,6 @@ _Describe in detail what you will complete by the end of each week (end of Frida
 * Week 1:
 * Week 2:
 * Week 3:
-* Week 4:
-* Week 5:
 
 # Evaluation
 ## 60%
