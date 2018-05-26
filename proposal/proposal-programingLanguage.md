@@ -12,8 +12,8 @@ The program will have the user mix a combination of ingredients, and potentially
 Getting the program to read a text file and apply the correct information may be a problem. While I have done this in the past, I do not have a method to read text files that I know for sure works. Once the text file can be read, another issue would be seperating each number on a line. 
 
 ## Time Line
-* Week 1: Write base program, implement user input and most functionality
-* Week 2: Add information to database, get program to read text files
+* Week 1: Add information to database, get program to read text files
+* Week 2: Finish most of program, get program to split strings and determine which drink is being made 
 * Week 3: Bug testing and fixing
 
 # Evaluation
