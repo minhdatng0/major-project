@@ -4,27 +4,25 @@ Alexander Yang
 * Theme/Look:
 
 ## Materials & Methods
-I will be working with Retro Pie. I will install this over the current operating system, raspian. In addition I will require an internet connection to install the software initially an a flash drive to easily transport ROMS into the game folder.
+I will be using Nano to write the program with Java. I will also be using a markdown file to store predetermined values.
 
 ## Program Specifications
-RetroPie is a software for raspian that allows the raspberry pi to emulate games. The program can run games from the dreamcast console and anything before that. My goal is to run games for n64; I think anything that was released after that require additional modification and funding. The software will be installed onto raspbian and include Emulation Station and RetroArch. I am mainly making this project for personal use.
+The program will have the user mix a combination of ingredients, and potentially get a predetermined drink after running the program. The drinks will be stored on a markdown file and the user will potentially be able to look at a guide book within the program.
 ## Potential Challenges
-One of the main problems is controller calibration. While I do have a controller, it may be hard to calibrate the button to fit the needs of each console. This is not too bad of an issue because I could always use the keyboard. Another one would be finding games. Finding roms on legitimate websites will be next to impossible, so I may have to dig deep to find them.
+Getting the program to read a markdown file and apply the correct information may be a problem. While I have done this in the past, I do not have a method to read markdown files that I know for sure works.
 
 ## Time Line
-* Week 1:Install RetroPie onto Raspberry Pi
-* Week 2:Find game ROMS and install
-* Week 3:Test games and calibrate controllers 
-* Week 4:Organize data
-* Week 5:Patch anything that is needed 
+* Week 1: Write base program, implement user input and most functionality
+* Week 2: Add information to database, get program to read markdown files
+* Week 3: Bug testing and fixing
 
 # Evaluation
 ## 60%
-Retro Pi is installed and can run Emulation Station.
+Program can run without errors and user input works fine
 
 ## 80%
-Program can run most games
+Program can detect user input and respond accordingly 
 
 ## 90+%
-Program can run Nintendo 64 games at a minimum of 30 frames per second, controller is properly calibrated and works with no problems
+Program can run perfectly and also includes a built in guide book
 
