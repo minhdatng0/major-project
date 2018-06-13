@@ -26,6 +26,12 @@ void draw (){
    fill(255);
     rectMode(CENTER);
      rect(width/2, height/2, diceSize , diceSize ,diceSize/5); 
+     
+  //dots
+   fill(50);
+   int side = int(random(1,7));
+     
+     
 
 
 
