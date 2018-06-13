@@ -30,6 +30,9 @@ void draw (){
   //dots
    fill(50);
    int side = int(random(1,7));
+   if (side == 1 || side == 3 || side ==5 )
+    ellipse(width/2, height/2, diceSize/5, diceSize/5);
+    
      
      
 
