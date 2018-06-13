@@ -7,6 +7,7 @@
 *
 */
 PImage img;
+int diceSize = 51;
 
 void setup (){
   size(300,168);
@@ -19,6 +20,12 @@ void setup (){
 
 void draw (){
  image(img,0,0);
+  
+  //dice
+  noStroke();
+   fill(255);
+    rectMode(CENTER);
+     rect(width/2, height/2, diceSize , diceSize ,diceSize/5); 
 
 
 
